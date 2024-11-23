@@ -17,13 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                                            
         $mail->Host       = 'smtp.gmail.com';                     
         $mail->SMTPAuth   = true;                                 
-        $mail->Username   = 'abc@xyz.com';      
-        $mail->Password   = 'xxxxxxxxxxxxxxxx';                   
+        $mail->Username   = 'abc@xyz.com';      //add from email id
+        $mail->Password   = 'xxxxxxxxxxxxxxxx';     //add from email id app password              
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;      
         $mail->Port       = 587;                                  
 
-        $mail->setFrom('abc@xyz.com', 'Calorie Tracker Feedback'); 
-        $mail->addAddress('xyz@abc.com');        
+        $mail->setFrom('abc@xyz.com', 'Calorie Tracker Feedback'); //add from email id
+        $mail->addAddress('xyz@abc.com');        //add to email id
 
         $mail->isHTML(false);                                    
         $mail->Subject = "NEW FEEDBACK";
