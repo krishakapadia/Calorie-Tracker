@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="bottom.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="contactus.css">
+
+    <style>
+        .email-pass input[type="text"],
+        .email-pass input[type="email"],
+        .email-pass textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0; 
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .email-pass input[type="text"] {
+            margin-bottom: 16px; 
+        }
+    </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-div">
+      <div class="header-logo">
+          <img class="logo" src="calories.png" alt="Calorie Tracker Logo">
+      </div>
+      
+      <div class="header-options">
+          <a class="home" href="Home page.html">HOME</a>
+          <a class="login" href="login.php">LOGIN</a>
+          <a class="register" href="1REGISTER.php">REGISTER</a>
+          <a class="calories" href="Hcalorie_tracker.php">CALORIES</a>
+      </div>
+
+      <div class="profile">
+          <button id="profile-button">
+              <img class="profile-image" src="user.png" alt="User Profile">
+          </button>
+      </div>     
+    </div>   
+  </div>  
+
+  <div class="login-box-container">
+    <div class="login-container">
+        <div class="login-box">
+            <img class="contactus-png" src="Contactus_image.avif" alt="Contact Us">
+            <p class="contactus-text">CONTACT US</p>
+            <div class="contact-info">
+              <p class="details">
+                Customer Care Numbers: 
+                <span class="number">
+                    <a href="https://wa.me/918976856057" target="_blank">8976856057</a>
+                </span>
+                <br>
+                Email-id: 
+                <span class="number">
+                    <a href="mailto:krisha.kapadia@somaiya.edu">krisha.kapadia@somaiya.edu</a>
+                </span>
+                <br>
+                K J SOMAIYA COLLEGE OF ENGINEERING
+                <br>
+                Mumbai, Vidyavihar, Maharashtra
+              </p>
+            </div>
+            
+            <form class="email-pass" action="send_email.php" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="feedback" name="feedback" placeholder="FEEDBACK" required></textarea>
+                <button type="submit" id="submit-button">
+                    SUBMIT
+                </button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer-links">
+      <a id="about-us" href="Home page.html">HOME</a>
+      <a id="features" href="login.php">CALORIES</a>
+      <a id="sdgs" href="1REGISTER.php">REGISTER</a>
+    </div>
+    <div class="copyright-credit">
+      <p>&copy; 2024</p>
+    </div>
+</body>
+</html>

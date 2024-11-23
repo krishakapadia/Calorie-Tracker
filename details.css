@@ -1,0 +1,36 @@
+.mealdisplay,.totaldisplay,.caloriedisplay
+{
+    position: relative;
+    border:solid;
+    border-width: 0.1px;
+    padding: 9px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+     
+}
+.meal,.calorie
+{   display: inline-block;
+    width: 55%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 50px;
+
+}
+
+.details_container
+{   
+    display: flex;
+    flex-direction: row;
+}
+.forscroll
+{   
+    width:80% ;
+    position: relative;
+    overflow-y: scroll;
+    height: 200px;
+    top: 50px;
+}

@@ -1,0 +1,58 @@
+.namedisplay,.emaildisplay,.phonedisplay
+{
+    position: relative;
+    border:solid;
+    border-width: 0.1px;
+    padding: 9px;
+    width: 40%;
+    padding-right: 40px;
+    padding-left: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    display: block;
+}
+.logout-box
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+#logout-button
+{
+    position: relative;
+    border: none;
+    background-color:hwb(36 10% 0%);
+    padding: 9px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+.name1,.email1,.phoneno1
+{
+    width: 45%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+.logout-text
+{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: -50px;
+    border-bottom: 2px solid;
+    top: 0; 
+}

@@ -1,0 +1,137 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+   
+}
+.vector-svg-left-top {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 60px;
+    height: auto;
+    animation: appleBounce reverse 5s infinite;
+  
+  }
+  .vector-svg-right-bottom{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    width: 50px;
+    height: auto;
+    animation: bananaBounce ease-in-out 5s infinite;
+  }
+  .Vector-svg-right-top{
+    position: absolute;
+    right:15%;
+    top:30%;
+    width:50px;
+    height:auto;
+    animation: kiwiBounce  5s infinite;
+  }
+  .vector-svg-left-bottom {
+    position: absolute;
+    left  : 10%;
+    bottom: 5%;
+    width: 50px;
+    height: auto;
+    animation: watermelonBounce ease-in-out 5s infinite;
+  }
+  
+  
+  
+  @keyframes bananaBounce {
+    0% {
+      transform: translateY(0);
+      rotate: 45deg;
+    }
+    50% {
+      transform: translateY(100px);
+      rotate: -45deg;
+    }
+    100% {
+      transform: translateY(0);
+      rotate: 0deg;
+    }
+  }
+  @keyframes appleBounce {
+    0% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(100px);
+      
+    }
+    100% {
+      transform: translateY(0);
+     
+    }
+  }
+  @keyframes kiwiBounce {
+    0% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(50px);
+      
+    }
+    100% {
+      transform: translateY(0);
+     
+    }
+  }
+  @keyframes watermelonBounce {
+    0% {
+      transform: translateY(0);
+      rotate: +90deg;
+    }
+    50% {
+      transform: translateY(100px);
+      rotate: +45deg;
+    }
+    100% {
+      transform: translateY(0);
+      rotate: 0deg;
+    }
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+    background: orange;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -125px;
+   
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+header p {
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover, button:focus {
+    background-color: #0056b3;
+}
